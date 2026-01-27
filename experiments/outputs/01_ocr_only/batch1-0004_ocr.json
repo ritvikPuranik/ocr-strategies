@@ -1,0 +1,1700 @@
+{
+  "image": "batch1-0004.jpg",
+  "approach": "ocr_only",
+  "model": "tesseract4",
+  "text": "Invoice no: 16273983\n\nDate of issue:\n\nSeller:\n\nReyes, Holloway and Lee\n38676 Johnson Burg Suite 666\nWest Rebeccamouth, SD 02588\n\nTax Id: 909-83-7738\nIBAN: GB96VWUL52026848004193\n\nITEMS\nNo. Description Qty\ntks Handmade Thick round warm 4,00\n\ncrochet Rug Carpet Mat 97%\nacrylic 3% me Floor Decor\n\n2. Rug White Moroccan Beni 2,00\nOurain Trellis Shag Area Rug\nAuthentic Handmade Carpet\n\n3: Abstract Living Room Carpet 1,00\nHome Decor Nordic Style\nBedside Area Rug Floor Mats\n\n4. Leopard Printed Rug Skin Mat 1,00\nLeather Faux Fur Animals Area\nRugs Home Carpets\n\nSe 1pc Exquisite Durable Foot 2,00\n\nCloth Christmas Carpet Xmas\nCushion for Kitchen\n\nSUMMARY\n\nVAT [%]\n10%\n\nTotal\n\n04/01/2017\n\nUM\n\neach\n\neach\n\neach\n\neach\n\neach\n\nClient:\nCastillo LLC\n\n70391 Kelsey Terrace\nGarcialand, VT 41740\n\nTax Id: 901-88-0463\n\nNet price\n\n44,99\n\n245,00\n\n24,01\n\n19,49\n\n1S oy)\n\nNet worth\n744,60\n\n$ 744,60\n\nNet worth VAT [%]\n179,96 10%\n490,00 10%\n\n24,01 10%\n19,49 10%\n31,14 10%\nVAT\n74,46\n$ 74,46\n\nGross\nworth\n\n197,96\n\n539,00\n\n26,41\n\n21,44\n\n34,25\n\nGross worth\n\n819,06\n\n$ 819,06\n\f",
+  "words_with_boxes": [
+    {
+      "text": "Invoice",
+      "conf": 96.0,
+      "bbox": {
+        "left": 136,
+        "top": 77,
+        "width": 130,
+        "height": 26
+      }
+    },
+    {
+      "text": "no:",
+      "conf": 95.0,
+      "bbox": {
+        "left": 283,
+        "top": 83,
+        "width": 53,
+        "height": 20
+      }
+    },
+    {
+      "text": "16273983",
+      "conf": 95.0,
+      "bbox": {
+        "left": 355,
+        "top": 77,
+        "width": 179,
+        "height": 26
+      }
+    },
+    {
+      "text": "Date",
+      "conf": 96.0,
+      "bbox": {
+        "left": 136,
+        "top": 146,
+        "width": 69,
+        "height": 22
+      }
+    },
+    {
+      "text": "of",
+      "conf": 96.0,
+      "bbox": {
+        "left": 218,
+        "top": 145,
+        "width": 28,
+        "height": 23
+      }
+    },
+    {
+      "text": "issue:",
+      "conf": 96.0,
+      "bbox": {
+        "left": 258,
+        "top": 145,
+        "width": 83,
+        "height": 24
+      }
+    },
+    {
+      "text": "Seller:",
+      "conf": 96.0,
+      "bbox": {
+        "left": 135,
+        "top": 447,
+        "width": 117,
+        "height": 25
+      }
+    },
+    {
+      "text": "Reyes,",
+      "conf": 96.0,
+      "bbox": {
+        "left": 144,
+        "top": 511,
+        "width": 88,
+        "height": 26
+      }
+    },
+    {
+      "text": "Holloway",
+      "conf": 96.0,
+      "bbox": {
+        "left": 246,
+        "top": 510,
+        "width": 123,
+        "height": 27
+      }
+    },
+    {
+      "text": "and",
+      "conf": 96.0,
+      "bbox": {
+        "left": 381,
+        "top": 510,
+        "width": 48,
+        "height": 21
+      }
+    },
+    {
+      "text": "Lee",
+      "conf": 96.0,
+      "bbox": {
+        "left": 443,
+        "top": 511,
+        "width": 45,
+        "height": 20
+      }
+    },
+    {
+      "text": "38676",
+      "conf": 96.0,
+      "bbox": {
+        "left": 144,
+        "top": 542,
+        "width": 81,
+        "height": 35
+      }
+    },
+    {
+      "text": "Johnson",
+      "conf": 96.0,
+      "bbox": {
+        "left": 237,
+        "top": 542,
+        "width": 108,
+        "height": 35
+      }
+    },
+    {
+      "text": "Burg",
+      "conf": 96.0,
+      "bbox": {
+        "left": 360,
+        "top": 547,
+        "width": 60,
+        "height": 26
+      }
+    },
+    {
+      "text": "Suite",
+      "conf": 96.0,
+      "bbox": {
+        "left": 434,
+        "top": 546,
+        "width": 67,
+        "height": 21
+      }
+    },
+    {
+      "text": "666",
+      "conf": 96.0,
+      "bbox": {
+        "left": 513,
+        "top": 546,
+        "width": 50,
+        "height": 21
+      }
+    },
+    {
+      "text": "West",
+      "conf": 93.0,
+      "bbox": {
+        "left": 143,
+        "top": 583,
+        "width": 68,
+        "height": 20
+      }
+    },
+    {
+      "text": "Rebeccamouth,",
+      "conf": 92.0,
+      "bbox": {
+        "left": 223,
+        "top": 582,
+        "width": 212,
+        "height": 24
+      }
+    },
+    {
+      "text": "SD",
+      "conf": 95.0,
+      "bbox": {
+        "left": 449,
+        "top": 582,
+        "width": 35,
+        "height": 21
+      }
+    },
+    {
+      "text": "02588",
+      "conf": 95.0,
+      "bbox": {
+        "left": 497,
+        "top": 582,
+        "width": 84,
+        "height": 21
+      }
+    },
+    {
+      "text": "Tax",
+      "conf": 96.0,
+      "bbox": {
+        "left": 141,
+        "top": 654,
+        "width": 50,
+        "height": 20
+      }
+    },
+    {
+      "text": "Id:",
+      "conf": 93.0,
+      "bbox": {
+        "left": 203,
+        "top": 653,
+        "width": 30,
+        "height": 21
+      }
+    },
+    {
+      "text": "909-83-7738",
+      "conf": 91.0,
+      "bbox": {
+        "left": 247,
+        "top": 653,
+        "width": 175,
+        "height": 21
+      }
+    },
+    {
+      "text": "IBAN:",
+      "conf": 91.0,
+      "bbox": {
+        "left": 144,
+        "top": 689,
+        "width": 71,
+        "height": 20
+      }
+    },
+    {
+      "text": "GB96VWUL52026848004193",
+      "conf": 90.0,
+      "bbox": {
+        "left": 228,
+        "top": 688,
+        "width": 402,
+        "height": 21
+      }
+    },
+    {
+      "text": "ITEMS",
+      "conf": 96.0,
+      "bbox": {
+        "left": 136,
+        "top": 763,
+        "width": 110,
+        "height": 26
+      }
+    },
+    {
+      "text": "No.",
+      "conf": 91.0,
+      "bbox": {
+        "left": 162,
+        "top": 850,
+        "width": 38,
+        "height": 16
+      }
+    },
+    {
+      "text": "Description",
+      "conf": 81.0,
+      "bbox": {
+        "left": 242,
+        "top": 849,
+        "width": 140,
+        "height": 22
+      }
+    },
+    {
+      "text": "Qty",
+      "conf": 96.0,
+      "bbox": {
+        "left": 681,
+        "top": 849,
+        "width": 43,
+        "height": 22
+      }
+    },
+    {
+      "text": "tks",
+      "conf": 56.0,
+      "bbox": {
+        "left": 166,
+        "top": 932,
+        "width": 23,
+        "height": 28
+      }
+    },
+    {
+      "text": "Handmade",
+      "conf": 94.0,
+      "bbox": {
+        "left": 242,
+        "top": 936,
+        "width": 119,
+        "height": 17
+      }
+    },
+    {
+      "text": "Thick",
+      "conf": 94.0,
+      "bbox": {
+        "left": 369,
+        "top": 936,
+        "width": 58,
+        "height": 17
+      }
+    },
+    {
+      "text": "round",
+      "conf": 96.0,
+      "bbox": {
+        "left": 437,
+        "top": 936,
+        "width": 61,
+        "height": 17
+      }
+    },
+    {
+      "text": "warm",
+      "conf": 96.0,
+      "bbox": {
+        "left": 508,
+        "top": 940,
+        "width": 60,
+        "height": 13
+      }
+    },
+    {
+      "text": "4,00",
+      "conf": 96.0,
+      "bbox": {
+        "left": 676,
+        "top": 936,
+        "width": 47,
+        "height": 20
+      }
+    },
+    {
+      "text": "crochet",
+      "conf": 96.0,
+      "bbox": {
+        "left": 241,
+        "top": 963,
+        "width": 82,
+        "height": 17
+      }
+    },
+    {
+      "text": "Rug",
+      "conf": 96.0,
+      "bbox": {
+        "left": 333,
+        "top": 964,
+        "width": 40,
+        "height": 21
+      }
+    },
+    {
+      "text": "Carpet",
+      "conf": 96.0,
+      "bbox": {
+        "left": 383,
+        "top": 963,
+        "width": 73,
+        "height": 22
+      }
+    },
+    {
+      "text": "Mat",
+      "conf": 95.0,
+      "bbox": {
+        "left": 465,
+        "top": 964,
+        "width": 39,
+        "height": 16
+      }
+    },
+    {
+      "text": "97%",
+      "conf": 95.0,
+      "bbox": {
+        "left": 513,
+        "top": 963,
+        "width": 47,
+        "height": 17
+      }
+    },
+    {
+      "text": "acrylic",
+      "conf": 95.0,
+      "bbox": {
+        "left": 241,
+        "top": 991,
+        "width": 70,
+        "height": 22
+      }
+    },
+    {
+      "text": "3%",
+      "conf": 96.0,
+      "bbox": {
+        "left": 321,
+        "top": 991,
+        "width": 33,
+        "height": 17
+      }
+    },
+    {
+      "text": "me",
+      "conf": 95.0,
+      "bbox": {
+        "left": 364,
+        "top": 995,
+        "width": 32,
+        "height": 13
+      }
+    },
+    {
+      "text": "Floor",
+      "conf": 95.0,
+      "bbox": {
+        "left": 407,
+        "top": 991,
+        "width": 53,
+        "height": 17
+      }
+    },
+    {
+      "text": "Decor",
+      "conf": 95.0,
+      "bbox": {
+        "left": 469,
+        "top": 992,
+        "width": 64,
+        "height": 16
+      }
+    },
+    {
+      "text": "2.",
+      "conf": 96.0,
+      "bbox": {
+        "left": 163,
+        "top": 1046,
+        "width": 26,
+        "height": 28
+      }
+    },
+    {
+      "text": "Rug",
+      "conf": 96.0,
+      "bbox": {
+        "left": 242,
+        "top": 1051,
+        "width": 40,
+        "height": 21
+      }
+    },
+    {
+      "text": "White",
+      "conf": 96.0,
+      "bbox": {
+        "left": 292,
+        "top": 1050,
+        "width": 62,
+        "height": 17
+      }
+    },
+    {
+      "text": "Moroccan",
+      "conf": 96.0,
+      "bbox": {
+        "left": 365,
+        "top": 1051,
+        "width": 103,
+        "height": 16
+      }
+    },
+    {
+      "text": "Beni",
+      "conf": 96.0,
+      "bbox": {
+        "left": 479,
+        "top": 1050,
+        "width": 45,
+        "height": 17
+      }
+    },
+    {
+      "text": "2,00",
+      "conf": 96.0,
+      "bbox": {
+        "left": 676,
+        "top": 1050,
+        "width": 47,
+        "height": 20
+      }
+    },
+    {
+      "text": "Ourain",
+      "conf": 92.0,
+      "bbox": {
+        "left": 241,
+        "top": 1078,
+        "width": 72,
+        "height": 17
+      }
+    },
+    {
+      "text": "Trellis",
+      "conf": 96.0,
+      "bbox": {
+        "left": 322,
+        "top": 1078,
+        "width": 65,
+        "height": 17
+      }
+    },
+    {
+      "text": "Shag",
+      "conf": 95.0,
+      "bbox": {
+        "left": 397,
+        "top": 1078,
+        "width": 52,
+        "height": 22
+      }
+    },
+    {
+      "text": "Area",
+      "conf": 96.0,
+      "bbox": {
+        "left": 459,
+        "top": 1079,
+        "width": 49,
+        "height": 16
+      }
+    },
+    {
+      "text": "Rug",
+      "conf": 96.0,
+      "bbox": {
+        "left": 519,
+        "top": 1079,
+        "width": 40,
+        "height": 21
+      }
+    },
+    {
+      "text": "Authentic",
+      "conf": 95.0,
+      "bbox": {
+        "left": 240,
+        "top": 1106,
+        "width": 106,
+        "height": 17
+      }
+    },
+    {
+      "text": "Handmade",
+      "conf": 95.0,
+      "bbox": {
+        "left": 356,
+        "top": 1106,
+        "width": 119,
+        "height": 17
+      }
+    },
+    {
+      "text": "Carpet",
+      "conf": 95.0,
+      "bbox": {
+        "left": 484,
+        "top": 1107,
+        "width": 73,
+        "height": 21
+      }
+    },
+    {
+      "text": "3:",
+      "conf": 86.0,
+      "bbox": {
+        "left": 165,
+        "top": 1161,
+        "width": 24,
+        "height": 31
+      }
+    },
+    {
+      "text": "Abstract",
+      "conf": 96.0,
+      "bbox": {
+        "left": 240,
+        "top": 1165,
+        "width": 93,
+        "height": 17
+      }
+    },
+    {
+      "text": "Living",
+      "conf": 96.0,
+      "bbox": {
+        "left": 343,
+        "top": 1165,
+        "width": 61,
+        "height": 22
+      }
+    },
+    {
+      "text": "Room",
+      "conf": 96.0,
+      "bbox": {
+        "left": 416,
+        "top": 1166,
+        "width": 60,
+        "height": 16
+      }
+    },
+    {
+      "text": "Carpet",
+      "conf": 96.0,
+      "bbox": {
+        "left": 486,
+        "top": 1165,
+        "width": 73,
+        "height": 22
+      }
+    },
+    {
+      "text": "1,00",
+      "conf": 96.0,
+      "bbox": {
+        "left": 677,
+        "top": 1165,
+        "width": 46,
+        "height": 20
+      }
+    },
+    {
+      "text": "Home",
+      "conf": 96.0,
+      "bbox": {
+        "left": 242,
+        "top": 1194,
+        "width": 63,
+        "height": 16
+      }
+    },
+    {
+      "text": "Decor",
+      "conf": 96.0,
+      "bbox": {
+        "left": 315,
+        "top": 1194,
+        "width": 64,
+        "height": 16
+      }
+    },
+    {
+      "text": "Nordic",
+      "conf": 96.0,
+      "bbox": {
+        "left": 388,
+        "top": 1193,
+        "width": 68,
+        "height": 17
+      }
+    },
+    {
+      "text": "Style",
+      "conf": 96.0,
+      "bbox": {
+        "left": 466,
+        "top": 1193,
+        "width": 53,
+        "height": 22
+      }
+    },
+    {
+      "text": "Bedside",
+      "conf": 96.0,
+      "bbox": {
+        "left": 242,
+        "top": 1221,
+        "width": 86,
+        "height": 17
+      }
+    },
+    {
+      "text": "Area",
+      "conf": 96.0,
+      "bbox": {
+        "left": 336,
+        "top": 1222,
+        "width": 49,
+        "height": 16
+      }
+    },
+    {
+      "text": "Rug",
+      "conf": 96.0,
+      "bbox": {
+        "left": 396,
+        "top": 1222,
+        "width": 40,
+        "height": 21
+      }
+    },
+    {
+      "text": "Floor",
+      "conf": 96.0,
+      "bbox": {
+        "left": 447,
+        "top": 1221,
+        "width": 53,
+        "height": 17
+      }
+    },
+    {
+      "text": "Mats",
+      "conf": 96.0,
+      "bbox": {
+        "left": 509,
+        "top": 1222,
+        "width": 51,
+        "height": 16
+      }
+    },
+    {
+      "text": "4.",
+      "conf": 93.0,
+      "bbox": {
+        "left": 172,
+        "top": 1281,
+        "width": 17,
+        "height": 16
+      }
+    },
+    {
+      "text": "Leopard",
+      "conf": 96.0,
+      "bbox": {
+        "left": 242,
+        "top": 1280,
+        "width": 87,
+        "height": 22
+      }
+    },
+    {
+      "text": "Printed",
+      "conf": 96.0,
+      "bbox": {
+        "left": 340,
+        "top": 1280,
+        "width": 75,
+        "height": 17
+      }
+    },
+    {
+      "text": "Rug",
+      "conf": 96.0,
+      "bbox": {
+        "left": 426,
+        "top": 1281,
+        "width": 40,
+        "height": 21
+      }
+    },
+    {
+      "text": "Skin",
+      "conf": 96.0,
+      "bbox": {
+        "left": 476,
+        "top": 1280,
+        "width": 44,
+        "height": 17
+      }
+    },
+    {
+      "text": "Mat",
+      "conf": 96.0,
+      "bbox": {
+        "left": 531,
+        "top": 1281,
+        "width": 39,
+        "height": 16
+      }
+    },
+    {
+      "text": "1,00",
+      "conf": 96.0,
+      "bbox": {
+        "left": 677,
+        "top": 1280,
+        "width": 46,
+        "height": 20
+      }
+    },
+    {
+      "text": "Leather",
+      "conf": 96.0,
+      "bbox": {
+        "left": 242,
+        "top": 1308,
+        "width": 83,
+        "height": 17
+      }
+    },
+    {
+      "text": "Faux",
+      "conf": 96.0,
+      "bbox": {
+        "left": 334,
+        "top": 1309,
+        "width": 51,
+        "height": 16
+      }
+    },
+    {
+      "text": "Fur",
+      "conf": 96.0,
+      "bbox": {
+        "left": 395,
+        "top": 1309,
+        "width": 34,
+        "height": 16
+      }
+    },
+    {
+      "text": "Animals",
+      "conf": 96.0,
+      "bbox": {
+        "left": 437,
+        "top": 1308,
+        "width": 86,
+        "height": 17
+      }
+    },
+    {
+      "text": "Area",
+      "conf": 96.0,
+      "bbox": {
+        "left": 532,
+        "top": 1309,
+        "width": 49,
+        "height": 16
+      }
+    },
+    {
+      "text": "Rugs",
+      "conf": 96.0,
+      "bbox": {
+        "left": 242,
+        "top": 1337,
+        "width": 52,
+        "height": 21
+      }
+    },
+    {
+      "text": "Home",
+      "conf": 96.0,
+      "bbox": {
+        "left": 304,
+        "top": 1337,
+        "width": 63,
+        "height": 16
+      }
+    },
+    {
+      "text": "Carpets",
+      "conf": 96.0,
+      "bbox": {
+        "left": 376,
+        "top": 1336,
+        "width": 84,
+        "height": 22
+      }
+    },
+    {
+      "text": "Se",
+      "conf": 31.0,
+      "bbox": {
+        "left": 172,
+        "top": 1396,
+        "width": 17,
+        "height": 16
+      }
+    },
+    {
+      "text": "1pc",
+      "conf": 90.0,
+      "bbox": {
+        "left": 242,
+        "top": 1396,
+        "width": 37,
+        "height": 21
+      }
+    },
+    {
+      "text": "Exquisite",
+      "conf": 96.0,
+      "bbox": {
+        "left": 290,
+        "top": 1395,
+        "width": 98,
+        "height": 22
+      }
+    },
+    {
+      "text": "Durable",
+      "conf": 96.0,
+      "bbox": {
+        "left": 398,
+        "top": 1395,
+        "width": 85,
+        "height": 17
+      }
+    },
+    {
+      "text": "Foot",
+      "conf": 96.0,
+      "bbox": {
+        "left": 493,
+        "top": 1396,
+        "width": 47,
+        "height": 16
+      }
+    },
+    {
+      "text": "2,00",
+      "conf": 95.0,
+      "bbox": {
+        "left": 676,
+        "top": 1395,
+        "width": 47,
+        "height": 20
+      }
+    },
+    {
+      "text": "Cloth",
+      "conf": 96.0,
+      "bbox": {
+        "left": 241,
+        "top": 1423,
+        "width": 55,
+        "height": 17
+      }
+    },
+    {
+      "text": "Christmas",
+      "conf": 96.0,
+      "bbox": {
+        "left": 306,
+        "top": 1423,
+        "width": 110,
+        "height": 17
+      }
+    },
+    {
+      "text": "Carpet",
+      "conf": 96.0,
+      "bbox": {
+        "left": 425,
+        "top": 1423,
+        "width": 74,
+        "height": 22
+      }
+    },
+    {
+      "text": "Xmas",
+      "conf": 96.0,
+      "bbox": {
+        "left": 507,
+        "top": 1424,
+        "width": 60,
+        "height": 16
+      }
+    },
+    {
+      "text": "Cushion",
+      "conf": 96.0,
+      "bbox": {
+        "left": 241,
+        "top": 1450,
+        "width": 86,
+        "height": 17
+      }
+    },
+    {
+      "text": "for",
+      "conf": 95.0,
+      "bbox": {
+        "left": 337,
+        "top": 1450,
+        "width": 30,
+        "height": 17
+      }
+    },
+    {
+      "text": "Kitchen",
+      "conf": 96.0,
+      "bbox": {
+        "left": 376,
+        "top": 1450,
+        "width": 80,
+        "height": 17
+      }
+    },
+    {
+      "text": "SUMMARY",
+      "conf": 96.0,
+      "bbox": {
+        "left": 135,
+        "top": 1543,
+        "width": 191,
+        "height": 25
+      }
+    },
+    {
+      "text": "VAT",
+      "conf": 91.0,
+      "bbox": {
+        "left": 643,
+        "top": 1629,
+        "width": 49,
+        "height": 16
+      }
+    },
+    {
+      "text": "[%]",
+      "conf": 92.0,
+      "bbox": {
+        "left": 702,
+        "top": 1628,
+        "width": 39,
+        "height": 20
+      }
+    },
+    {
+      "text": "10%",
+      "conf": 95.0,
+      "bbox": {
+        "left": 670,
+        "top": 1687,
+        "width": 46,
+        "height": 17
+      }
+    },
+    {
+      "text": "Total",
+      "conf": 96.0,
+      "bbox": {
+        "left": 503,
+        "top": 1746,
+        "width": 62,
+        "height": 17
+      }
+    },
+    {
+      "text": "04/01/2017",
+      "conf": 96.0,
+      "bbox": {
+        "left": 805,
+        "top": 145,
+        "width": 171,
+        "height": 26
+      }
+    },
+    {
+      "text": "UM",
+      "conf": 92.0,
+      "bbox": {
+        "left": 781,
+        "top": 850,
+        "width": 36,
+        "height": 16
+      }
+    },
+    {
+      "text": "each",
+      "conf": 96.0,
+      "bbox": {
+        "left": 773,
+        "top": 936,
+        "width": 51,
+        "height": 17
+      }
+    },
+    {
+      "text": "each",
+      "conf": 96.0,
+      "bbox": {
+        "left": 773,
+        "top": 1050,
+        "width": 51,
+        "height": 17
+      }
+    },
+    {
+      "text": "each",
+      "conf": 96.0,
+      "bbox": {
+        "left": 773,
+        "top": 1165,
+        "width": 51,
+        "height": 17
+      }
+    },
+    {
+      "text": "each",
+      "conf": 96.0,
+      "bbox": {
+        "left": 773,
+        "top": 1280,
+        "width": 51,
+        "height": 17
+      }
+    },
+    {
+      "text": "each",
+      "conf": 96.0,
+      "bbox": {
+        "left": 773,
+        "top": 1395,
+        "width": 51,
+        "height": 17
+      }
+    },
+    {
+      "text": "Client:",
+      "conf": 96.0,
+      "bbox": {
+        "left": 828,
+        "top": 447,
+        "width": 118,
+        "height": 25
+      }
+    },
+    {
+      "text": "Castillo",
+      "conf": 96.0,
+      "bbox": {
+        "left": 836,
+        "top": 510,
+        "width": 99,
+        "height": 21
+      }
+    },
+    {
+      "text": "LLC",
+      "conf": 96.0,
+      "bbox": {
+        "left": 948,
+        "top": 510,
+        "width": 46,
+        "height": 21
+      }
+    },
+    {
+      "text": "70391",
+      "conf": 96.0,
+      "bbox": {
+        "left": 837,
+        "top": 546,
+        "width": 83,
+        "height": 21
+      }
+    },
+    {
+      "text": "Kelsey",
+      "conf": 96.0,
+      "bbox": {
+        "left": 934,
+        "top": 546,
+        "width": 88,
+        "height": 27
+      }
+    },
+    {
+      "text": "Terrace",
+      "conf": 96.0,
+      "bbox": {
+        "left": 1031,
+        "top": 547,
+        "width": 105,
+        "height": 20
+      }
+    },
+    {
+      "text": "Garcialand,",
+      "conf": 91.0,
+      "bbox": {
+        "left": 836,
+        "top": 582,
+        "width": 155,
+        "height": 24
+      }
+    },
+    {
+      "text": "VT",
+      "conf": 96.0,
+      "bbox": {
+        "left": 1003,
+        "top": 583,
+        "width": 35,
+        "height": 20
+      }
+    },
+    {
+      "text": "41740",
+      "conf": 96.0,
+      "bbox": {
+        "left": 1048,
+        "top": 582,
+        "width": 86,
+        "height": 21
+      }
+    },
+    {
+      "text": "Tax",
+      "conf": 96.0,
+      "bbox": {
+        "left": 834,
+        "top": 654,
+        "width": 50,
+        "height": 20
+      }
+    },
+    {
+      "text": "Id:",
+      "conf": 93.0,
+      "bbox": {
+        "left": 896,
+        "top": 653,
+        "width": 30,
+        "height": 21
+      }
+    },
+    {
+      "text": "901-88-0463",
+      "conf": 92.0,
+      "bbox": {
+        "left": 939,
+        "top": 653,
+        "width": 176,
+        "height": 21
+      }
+    },
+    {
+      "text": "Net",
+      "conf": 96.0,
+      "bbox": {
+        "left": 903,
+        "top": 850,
+        "width": 42,
+        "height": 16
+      }
+    },
+    {
+      "text": "price",
+      "conf": 96.0,
+      "bbox": {
+        "left": 955,
+        "top": 849,
+        "width": 60,
+        "height": 22
+      }
+    },
+    {
+      "text": "44,99",
+      "conf": 96.0,
+      "bbox": {
+        "left": 953,
+        "top": 936,
+        "width": 61,
+        "height": 20
+      }
+    },
+    {
+      "text": "245,00",
+      "conf": 96.0,
+      "bbox": {
+        "left": 939,
+        "top": 1050,
+        "width": 75,
+        "height": 20
+      }
+    },
+    {
+      "text": "24,01",
+      "conf": 96.0,
+      "bbox": {
+        "left": 953,
+        "top": 1165,
+        "width": 61,
+        "height": 20
+      }
+    },
+    {
+      "text": "19,49",
+      "conf": 96.0,
+      "bbox": {
+        "left": 954,
+        "top": 1280,
+        "width": 60,
+        "height": 20
+      }
+    },
+    {
+      "text": "1S",
+      "conf": 20.0,
+      "bbox": {
+        "left": 954,
+        "top": 1396,
+        "width": 25,
+        "height": 16
+      }
+    },
+    {
+      "text": "oy)",
+      "conf": 28.0,
+      "bbox": {
+        "left": 982,
+        "top": 1392,
+        "width": 32,
+        "height": 30
+      }
+    },
+    {
+      "text": "Net",
+      "conf": 96.0,
+      "bbox": {
+        "left": 932,
+        "top": 1629,
+        "width": 42,
+        "height": 16
+      }
+    },
+    {
+      "text": "worth",
+      "conf": 95.0,
+      "bbox": {
+        "left": 983,
+        "top": 1628,
+        "width": 70,
+        "height": 17
+      }
+    },
+    {
+      "text": "744,60",
+      "conf": 95.0,
+      "bbox": {
+        "left": 979,
+        "top": 1687,
+        "width": 75,
+        "height": 20
+      }
+    },
+    {
+      "text": "$",
+      "conf": 92.0,
+      "bbox": {
+        "left": 948,
+        "top": 1746,
+        "width": 12,
+        "height": 20
+      }
+    },
+    {
+      "text": "744,60",
+      "conf": 96.0,
+      "bbox": {
+        "left": 971,
+        "top": 1746,
+        "width": 83,
+        "height": 20
+      }
+    },
+    {
+      "text": "Net",
+      "conf": 95.0,
+      "bbox": {
+        "left": 1062,
+        "top": 850,
+        "width": 41,
+        "height": 16
+      }
+    },
+    {
+      "text": "worth",
+      "conf": 95.0,
+      "bbox": {
+        "left": 1113,
+        "top": 849,
+        "width": 70,
+        "height": 17
+      }
+    },
+    {
+      "text": "VAT",
+      "conf": 90.0,
+      "bbox": {
+        "left": 1231,
+        "top": 850,
+        "width": 49,
+        "height": 16
+      }
+    },
+    {
+      "text": "[%]",
+      "conf": 90.0,
+      "bbox": {
+        "left": 1290,
+        "top": 849,
+        "width": 39,
+        "height": 20
+      }
+    },
+    {
+      "text": "179,96",
+      "conf": 96.0,
+      "bbox": {
+        "left": 1110,
+        "top": 931,
+        "width": 74,
+        "height": 32
+      }
+    },
+    {
+      "text": "10%",
+      "conf": 96.0,
+      "bbox": {
+        "left": 1284,
+        "top": 936,
+        "width": 46,
+        "height": 18
+      }
+    },
+    {
+      "text": "490,00",
+      "conf": 96.0,
+      "bbox": {
+        "left": 1108,
+        "top": 1045,
+        "width": 75,
+        "height": 32
+      }
+    },
+    {
+      "text": "10%",
+      "conf": 96.0,
+      "bbox": {
+        "left": 1284,
+        "top": 1050,
+        "width": 45,
+        "height": 17
+      }
+    },
+    {
+      "text": "24,01",
+      "conf": 96.0,
+      "bbox": {
+        "left": 1123,
+        "top": 1165,
+        "width": 60,
+        "height": 19
+      }
+    },
+    {
+      "text": "10%",
+      "conf": 96.0,
+      "bbox": {
+        "left": 1284,
+        "top": 1165,
+        "width": 45,
+        "height": 17
+      }
+    },
+    {
+      "text": "19,49",
+      "conf": 95.0,
+      "bbox": {
+        "left": 1124,
+        "top": 1275,
+        "width": 59,
+        "height": 32
+      }
+    },
+    {
+      "text": "10%",
+      "conf": 96.0,
+      "bbox": {
+        "left": 1284,
+        "top": 1280,
+        "width": 45,
+        "height": 17
+      }
+    },
+    {
+      "text": "31,14",
+      "conf": 96.0,
+      "bbox": {
+        "left": 1122,
+        "top": 1385,
+        "width": 62,
+        "height": 39
+      }
+    },
+    {
+      "text": "10%",
+      "conf": 96.0,
+      "bbox": {
+        "left": 1284,
+        "top": 1395,
+        "width": 45,
+        "height": 17
+      }
+    },
+    {
+      "text": "VAT",
+      "conf": 96.0,
+      "bbox": {
+        "left": 1191,
+        "top": 1629,
+        "width": 49,
+        "height": 16
+      }
+    },
+    {
+      "text": "74,46",
+      "conf": 96.0,
+      "bbox": {
+        "left": 1178,
+        "top": 1687,
+        "width": 61,
+        "height": 20
+      }
+    },
+    {
+      "text": "$",
+      "conf": 92.0,
+      "bbox": {
+        "left": 1148,
+        "top": 1746,
+        "width": 12,
+        "height": 20
+      }
+    },
+    {
+      "text": "74,46",
+      "conf": 96.0,
+      "bbox": {
+        "left": 1171,
+        "top": 1746,
+        "width": 68,
+        "height": 20
+      }
+    },
+    {
+      "text": "Gross",
+      "conf": 96.0,
+      "bbox": {
+        "left": 1430,
+        "top": 849,
+        "width": 69,
+        "height": 17
+      }
+    },
+    {
+      "text": "worth",
+      "conf": 96.0,
+      "bbox": {
+        "left": 1428,
+        "top": 876,
+        "width": 70,
+        "height": 17
+      }
+    },
+    {
+      "text": "197,96",
+      "conf": 96.0,
+      "bbox": {
+        "left": 1424,
+        "top": 936,
+        "width": 75,
+        "height": 20
+      }
+    },
+    {
+      "text": "539,00",
+      "conf": 96.0,
+      "bbox": {
+        "left": 1424,
+        "top": 1050,
+        "width": 74,
+        "height": 20
+      }
+    },
+    {
+      "text": "26,41",
+      "conf": 96.0,
+      "bbox": {
+        "left": 1438,
+        "top": 1165,
+        "width": 60,
+        "height": 20
+      }
+    },
+    {
+      "text": "21,44",
+      "conf": 95.0,
+      "bbox": {
+        "left": 1438,
+        "top": 1280,
+        "width": 61,
+        "height": 19
+      }
+    },
+    {
+      "text": "34,25",
+      "conf": 96.0,
+      "bbox": {
+        "left": 1438,
+        "top": 1395,
+        "width": 60,
+        "height": 20
+      }
+    },
+    {
+      "text": "Gross",
+      "conf": 96.0,
+      "bbox": {
+        "left": 1353,
+        "top": 1628,
+        "width": 69,
+        "height": 17
+      }
+    },
+    {
+      "text": "worth",
+      "conf": 96.0,
+      "bbox": {
+        "left": 1432,
+        "top": 1628,
+        "width": 70,
+        "height": 17
+      }
+    },
+    {
+      "text": "819,06",
+      "conf": 96.0,
+      "bbox": {
+        "left": 1427,
+        "top": 1687,
+        "width": 76,
+        "height": 20
+      }
+    },
+    {
+      "text": "$",
+      "conf": 93.0,
+      "bbox": {
+        "left": 1396,
+        "top": 1746,
+        "width": 13,
+        "height": 20
+      }
+    },
+    {
+      "text": "819,06",
+      "conf": 96.0,
+      "bbox": {
+        "left": 1419,
+        "top": 1746,
+        "width": 84,
+        "height": 20
+      }
+    }
+  ],
+  "word_count": 169,
+  "timestamp": "2026-01-27T05:49:24.525115"
+}

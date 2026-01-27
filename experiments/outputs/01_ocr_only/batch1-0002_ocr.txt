@@ -1,0 +1,96 @@
+Invoice no: 12847181
+
+Date of issue:
+
+Seller:
+
+Fitzpatrick and Sons
+00480 Cook Cove
+Spencerport, UT 12036
+
+Tax Id: 998-99-5253
+IBAN: GB92PBPQ73499358975916
+
+ITEMS
+No. Description Qty
+1. HP Desktop Computer PC J] 4,00
+
+Core i5 16GB 2TB HD 256GB
+SSD 22" LCD J] Windows 10
+
+2. CUSTOM BUILT AMD RYZEN 3,00
+THREADRIPPER GAMING
+COMPUTER , 32 GB RAM,
+
+3: Fast Dell Optiplex Desktop PC 1,00
+Computer Dual Core 3.4Ghz
+8GB 1TB Win 10 Pro WIFI
+
+4. Dell Optiplex 790 Computer i7 3,00
+@ 3.40 Ghz Quad Core 250GB
+4GB Working
+
+ay Vintage Microsolutions Pentium 2,00
+
+133mhz Desktop Tower PC
+Windows 95 5.25 Floppy
+
+SUMMARY
+
+VAT [%]
+10%
+
+Total
+
+03/03/2012
+
+UM
+
+each
+
+each
+
+each
+
+each
+
+each
+
+Client:
+
+Duncan PLC
+Unit 8799 Box 0703
+DPO AP 81970
+
+Tax Id: 911-82-7132
+
+Net price Net worth VAT [%]
+139,95 559,80 10%
+1 400,00 4 200,00 10%
+217,00 217,00 10%
+159,99 479,97 10%
+390,00 780,00 10%
+Net worth VAT
+6 236,77 623,68
+
+$ 6 236,77 $ 623,68
+
+Gross
+worth
+
+615,78
+
+4 620,00
+
+238,70
+
+527,97
+
+858,00
+
+Gross worth
+
+6 860,45
+
+$ 6 860,45
+

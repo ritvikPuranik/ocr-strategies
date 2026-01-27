@@ -1,0 +1,1770 @@
+{
+  "image": "batch1-0002.jpg",
+  "approach": "ocr_only",
+  "model": "tesseract4",
+  "text": "Invoice no: 12847181\n\nDate of issue:\n\nSeller:\n\nFitzpatrick and Sons\n00480 Cook Cove\nSpencerport, UT 12036\n\nTax Id: 998-99-5253\nIBAN: GB92PBPQ73499358975916\n\nITEMS\nNo. Description Qty\n1. HP Desktop Computer PC J] 4,00\n\nCore i5 16GB 2TB HD 256GB\nSSD 22\" LCD J] Windows 10\n\n2. CUSTOM BUILT AMD RYZEN 3,00\nTHREADRIPPER GAMING\nCOMPUTER , 32 GB RAM,\n\n3: Fast Dell Optiplex Desktop PC 1,00\nComputer Dual Core 3.4Ghz\n8GB 1TB Win 10 Pro WIFI\n\n4. Dell Optiplex 790 Computer i7 3,00\n@ 3.40 Ghz Quad Core 250GB\n4GB Working\n\nay Vintage Microsolutions Pentium 2,00\n\n133mhz Desktop Tower PC\nWindows 95 5.25 Floppy\n\nSUMMARY\n\nVAT [%]\n10%\n\nTotal\n\n03/03/2012\n\nUM\n\neach\n\neach\n\neach\n\neach\n\neach\n\nClient:\n\nDuncan PLC\nUnit 8799 Box 0703\nDPO AP 81970\n\nTax Id: 911-82-7132\n\nNet price Net worth VAT [%]\n139,95 559,80 10%\n1 400,00 4 200,00 10%\n217,00 217,00 10%\n159,99 479,97 10%\n390,00 780,00 10%\nNet worth VAT\n6 236,77 623,68\n\n$ 6 236,77 $ 623,68\n\nGross\nworth\n\n615,78\n\n4 620,00\n\n238,70\n\n527,97\n\n858,00\n\nGross worth\n\n6 860,45\n\n$ 6 860,45\n\f",
+  "words_with_boxes": [
+    {
+      "text": "Invoice",
+      "conf": 96.0,
+      "bbox": {
+        "left": 136,
+        "top": 77,
+        "width": 130,
+        "height": 26
+      }
+    },
+    {
+      "text": "no:",
+      "conf": 95.0,
+      "bbox": {
+        "left": 283,
+        "top": 83,
+        "width": 53,
+        "height": 20
+      }
+    },
+    {
+      "text": "12847181",
+      "conf": 95.0,
+      "bbox": {
+        "left": 355,
+        "top": 77,
+        "width": 179,
+        "height": 26
+      }
+    },
+    {
+      "text": "Date",
+      "conf": 96.0,
+      "bbox": {
+        "left": 136,
+        "top": 146,
+        "width": 69,
+        "height": 22
+      }
+    },
+    {
+      "text": "of",
+      "conf": 96.0,
+      "bbox": {
+        "left": 218,
+        "top": 145,
+        "width": 28,
+        "height": 23
+      }
+    },
+    {
+      "text": "issue:",
+      "conf": 96.0,
+      "bbox": {
+        "left": 258,
+        "top": 145,
+        "width": 83,
+        "height": 23
+      }
+    },
+    {
+      "text": "Seller:",
+      "conf": 96.0,
+      "bbox": {
+        "left": 135,
+        "top": 447,
+        "width": 117,
+        "height": 25
+      }
+    },
+    {
+      "text": "Fitzpatrick",
+      "conf": 96.0,
+      "bbox": {
+        "left": 144,
+        "top": 510,
+        "width": 142,
+        "height": 27
+      }
+    },
+    {
+      "text": "and",
+      "conf": 96.0,
+      "bbox": {
+        "left": 297,
+        "top": 510,
+        "width": 48,
+        "height": 21
+      }
+    },
+    {
+      "text": "Sons",
+      "conf": 96.0,
+      "bbox": {
+        "left": 359,
+        "top": 510,
+        "width": 63,
+        "height": 21
+      }
+    },
+    {
+      "text": "00480",
+      "conf": 96.0,
+      "bbox": {
+        "left": 143,
+        "top": 546,
+        "width": 85,
+        "height": 21
+      }
+    },
+    {
+      "text": "Cook",
+      "conf": 96.0,
+      "bbox": {
+        "left": 240,
+        "top": 546,
+        "width": 68,
+        "height": 21
+      }
+    },
+    {
+      "text": "Cove",
+      "conf": 96.0,
+      "bbox": {
+        "left": 319,
+        "top": 546,
+        "width": 67,
+        "height": 21
+      }
+    },
+    {
+      "text": "Spencerport,",
+      "conf": 96.0,
+      "bbox": {
+        "left": 143,
+        "top": 582,
+        "width": 175,
+        "height": 27
+      }
+    },
+    {
+      "text": "UT",
+      "conf": 96.0,
+      "bbox": {
+        "left": 332,
+        "top": 583,
+        "width": 35,
+        "height": 20
+      }
+    },
+    {
+      "text": "12036",
+      "conf": 96.0,
+      "bbox": {
+        "left": 379,
+        "top": 582,
+        "width": 84,
+        "height": 21
+      }
+    },
+    {
+      "text": "Tax",
+      "conf": 96.0,
+      "bbox": {
+        "left": 141,
+        "top": 654,
+        "width": 50,
+        "height": 20
+      }
+    },
+    {
+      "text": "Id:",
+      "conf": 93.0,
+      "bbox": {
+        "left": 203,
+        "top": 653,
+        "width": 30,
+        "height": 21
+      }
+    },
+    {
+      "text": "998-99-5253",
+      "conf": 92.0,
+      "bbox": {
+        "left": 247,
+        "top": 653,
+        "width": 175,
+        "height": 21
+      }
+    },
+    {
+      "text": "IBAN:",
+      "conf": 92.0,
+      "bbox": {
+        "left": 144,
+        "top": 689,
+        "width": 71,
+        "height": 20
+      }
+    },
+    {
+      "text": "GB92PBPQ73499358975916",
+      "conf": 92.0,
+      "bbox": {
+        "left": 228,
+        "top": 688,
+        "width": 395,
+        "height": 25
+      }
+    },
+    {
+      "text": "ITEMS",
+      "conf": 96.0,
+      "bbox": {
+        "left": 136,
+        "top": 763,
+        "width": 110,
+        "height": 26
+      }
+    },
+    {
+      "text": "No.",
+      "conf": 91.0,
+      "bbox": {
+        "left": 162,
+        "top": 850,
+        "width": 38,
+        "height": 16
+      }
+    },
+    {
+      "text": "Description",
+      "conf": 81.0,
+      "bbox": {
+        "left": 242,
+        "top": 849,
+        "width": 140,
+        "height": 22
+      }
+    },
+    {
+      "text": "Qty",
+      "conf": 96.0,
+      "bbox": {
+        "left": 681,
+        "top": 849,
+        "width": 43,
+        "height": 22
+      }
+    },
+    {
+      "text": "1.",
+      "conf": 91.0,
+      "bbox": {
+        "left": 161,
+        "top": 932,
+        "width": 28,
+        "height": 30
+      }
+    },
+    {
+      "text": "HP",
+      "conf": 96.0,
+      "bbox": {
+        "left": 242,
+        "top": 937,
+        "width": 27,
+        "height": 16
+      }
+    },
+    {
+      "text": "Desktop",
+      "conf": 96.0,
+      "bbox": {
+        "left": 279,
+        "top": 936,
+        "width": 89,
+        "height": 22
+      }
+    },
+    {
+      "text": "Computer",
+      "conf": 96.0,
+      "bbox": {
+        "left": 377,
+        "top": 936,
+        "width": 109,
+        "height": 22
+      }
+    },
+    {
+      "text": "PC",
+      "conf": 95.0,
+      "bbox": {
+        "left": 496,
+        "top": 936,
+        "width": 25,
+        "height": 17
+      }
+    },
+    {
+      "text": "J]",
+      "conf": 40.0,
+      "bbox": {
+        "left": 530,
+        "top": 937,
+        "width": 12,
+        "height": 20
+      }
+    },
+    {
+      "text": "4,00",
+      "conf": 95.0,
+      "bbox": {
+        "left": 676,
+        "top": 936,
+        "width": 47,
+        "height": 20
+      }
+    },
+    {
+      "text": "Core",
+      "conf": 92.0,
+      "bbox": {
+        "left": 241,
+        "top": 963,
+        "width": 50,
+        "height": 17
+      }
+    },
+    {
+      "text": "i5",
+      "conf": 90.0,
+      "bbox": {
+        "left": 301,
+        "top": 963,
+        "width": 17,
+        "height": 17
+      }
+    },
+    {
+      "text": "16GB",
+      "conf": 91.0,
+      "bbox": {
+        "left": 329,
+        "top": 963,
+        "width": 57,
+        "height": 17
+      }
+    },
+    {
+      "text": "2TB",
+      "conf": 91.0,
+      "bbox": {
+        "left": 396,
+        "top": 963,
+        "width": 40,
+        "height": 17
+      }
+    },
+    {
+      "text": "HD",
+      "conf": 92.0,
+      "bbox": {
+        "left": 446,
+        "top": 964,
+        "width": 31,
+        "height": 16
+      }
+    },
+    {
+      "text": "256GB",
+      "conf": 92.0,
+      "bbox": {
+        "left": 486,
+        "top": 963,
+        "width": 73,
+        "height": 17
+      }
+    },
+    {
+      "text": "SSD",
+      "conf": 96.0,
+      "bbox": {
+        "left": 241,
+        "top": 991,
+        "width": 43,
+        "height": 17
+      }
+    },
+    {
+      "text": "22\"",
+      "conf": 94.0,
+      "bbox": {
+        "left": 294,
+        "top": 991,
+        "width": 35,
+        "height": 17
+      }
+    },
+    {
+      "text": "LCD",
+      "conf": 94.0,
+      "bbox": {
+        "left": 340,
+        "top": 991,
+        "width": 42,
+        "height": 17
+      }
+    },
+    {
+      "text": "J]",
+      "conf": 54.0,
+      "bbox": {
+        "left": 391,
+        "top": 992,
+        "width": 11,
+        "height": 20
+      }
+    },
+    {
+      "text": "Windows",
+      "conf": 96.0,
+      "bbox": {
+        "left": 411,
+        "top": 991,
+        "width": 98,
+        "height": 17
+      }
+    },
+    {
+      "text": "10",
+      "conf": 96.0,
+      "bbox": {
+        "left": 520,
+        "top": 991,
+        "width": 24,
+        "height": 17
+      }
+    },
+    {
+      "text": "2.",
+      "conf": 96.0,
+      "bbox": {
+        "left": 172,
+        "top": 1051,
+        "width": 17,
+        "height": 16
+      }
+    },
+    {
+      "text": "CUSTOM",
+      "conf": 96.0,
+      "bbox": {
+        "left": 241,
+        "top": 1050,
+        "width": 93,
+        "height": 17
+      }
+    },
+    {
+      "text": "BUILT",
+      "conf": 96.0,
+      "bbox": {
+        "left": 345,
+        "top": 1051,
+        "width": 62,
+        "height": 16
+      }
+    },
+    {
+      "text": "AMD",
+      "conf": 91.0,
+      "bbox": {
+        "left": 415,
+        "top": 1051,
+        "width": 50,
+        "height": 16
+      }
+    },
+    {
+      "text": "RYZEN",
+      "conf": 91.0,
+      "bbox": {
+        "left": 475,
+        "top": 1051,
+        "width": 71,
+        "height": 16
+      }
+    },
+    {
+      "text": "3,00",
+      "conf": 96.0,
+      "bbox": {
+        "left": 676,
+        "top": 1050,
+        "width": 47,
+        "height": 20
+      }
+    },
+    {
+      "text": "THREADRIPPER",
+      "conf": 92.0,
+      "bbox": {
+        "left": 240,
+        "top": 1079,
+        "width": 169,
+        "height": 16
+      }
+    },
+    {
+      "text": "GAMING",
+      "conf": 95.0,
+      "bbox": {
+        "left": 419,
+        "top": 1078,
+        "width": 89,
+        "height": 17
+      }
+    },
+    {
+      "text": "COMPUTER",
+      "conf": 93.0,
+      "bbox": {
+        "left": 241,
+        "top": 1106,
+        "width": 123,
+        "height": 17
+      }
+    },
+    {
+      "text": ",",
+      "conf": 93.0,
+      "bbox": {
+        "left": 374,
+        "top": 1120,
+        "width": 3,
+        "height": 6
+      }
+    },
+    {
+      "text": "32",
+      "conf": 95.0,
+      "bbox": {
+        "left": 388,
+        "top": 1106,
+        "width": 24,
+        "height": 17
+      }
+    },
+    {
+      "text": "GB",
+      "conf": 96.0,
+      "bbox": {
+        "left": 423,
+        "top": 1106,
+        "width": 29,
+        "height": 17
+      }
+    },
+    {
+      "text": "RAM,",
+      "conf": 96.0,
+      "bbox": {
+        "left": 463,
+        "top": 1107,
+        "width": 53,
+        "height": 19
+      }
+    },
+    {
+      "text": "3:",
+      "conf": 86.0,
+      "bbox": {
+        "left": 165,
+        "top": 1161,
+        "width": 24,
+        "height": 31
+      }
+    },
+    {
+      "text": "Fast",
+      "conf": 96.0,
+      "bbox": {
+        "left": 242,
+        "top": 1166,
+        "width": 44,
+        "height": 16
+      }
+    },
+    {
+      "text": "Dell",
+      "conf": 96.0,
+      "bbox": {
+        "left": 296,
+        "top": 1165,
+        "width": 39,
+        "height": 17
+      }
+    },
+    {
+      "text": "Optiplex",
+      "conf": 96.0,
+      "bbox": {
+        "left": 345,
+        "top": 1165,
+        "width": 92,
+        "height": 22
+      }
+    },
+    {
+      "text": "Desktop",
+      "conf": 96.0,
+      "bbox": {
+        "left": 447,
+        "top": 1165,
+        "width": 88,
+        "height": 22
+      }
+    },
+    {
+      "text": "PC",
+      "conf": 96.0,
+      "bbox": {
+        "left": 545,
+        "top": 1165,
+        "width": 26,
+        "height": 17
+      }
+    },
+    {
+      "text": "1,00",
+      "conf": 96.0,
+      "bbox": {
+        "left": 677,
+        "top": 1165,
+        "width": 46,
+        "height": 20
+      }
+    },
+    {
+      "text": "Computer",
+      "conf": 96.0,
+      "bbox": {
+        "left": 241,
+        "top": 1193,
+        "width": 109,
+        "height": 22
+      }
+    },
+    {
+      "text": "Dual",
+      "conf": 96.0,
+      "bbox": {
+        "left": 360,
+        "top": 1193,
+        "width": 47,
+        "height": 17
+      }
+    },
+    {
+      "text": "Core",
+      "conf": 90.0,
+      "bbox": {
+        "left": 417,
+        "top": 1193,
+        "width": 49,
+        "height": 17
+      }
+    },
+    {
+      "text": "3.4Ghz",
+      "conf": 90.0,
+      "bbox": {
+        "left": 476,
+        "top": 1193,
+        "width": 76,
+        "height": 17
+      }
+    },
+    {
+      "text": "8GB",
+      "conf": 91.0,
+      "bbox": {
+        "left": 241,
+        "top": 1221,
+        "width": 44,
+        "height": 17
+      }
+    },
+    {
+      "text": "1TB",
+      "conf": 91.0,
+      "bbox": {
+        "left": 296,
+        "top": 1222,
+        "width": 39,
+        "height": 16
+      }
+    },
+    {
+      "text": "Win",
+      "conf": 95.0,
+      "bbox": {
+        "left": 345,
+        "top": 1221,
+        "width": 39,
+        "height": 17
+      }
+    },
+    {
+      "text": "10",
+      "conf": 96.0,
+      "bbox": {
+        "left": 395,
+        "top": 1221,
+        "width": 25,
+        "height": 17
+      }
+    },
+    {
+      "text": "Pro",
+      "conf": 96.0,
+      "bbox": {
+        "left": 430,
+        "top": 1222,
+        "width": 33,
+        "height": 16
+      }
+    },
+    {
+      "text": "WIFI",
+      "conf": 94.0,
+      "bbox": {
+        "left": 472,
+        "top": 1222,
+        "width": 45,
+        "height": 16
+      }
+    },
+    {
+      "text": "4.",
+      "conf": 93.0,
+      "bbox": {
+        "left": 172,
+        "top": 1281,
+        "width": 17,
+        "height": 16
+      }
+    },
+    {
+      "text": "Dell",
+      "conf": 96.0,
+      "bbox": {
+        "left": 242,
+        "top": 1280,
+        "width": 39,
+        "height": 17
+      }
+    },
+    {
+      "text": "Optiplex",
+      "conf": 95.0,
+      "bbox": {
+        "left": 291,
+        "top": 1280,
+        "width": 92,
+        "height": 22
+      }
+    },
+    {
+      "text": "790",
+      "conf": 95.0,
+      "bbox": {
+        "left": 393,
+        "top": 1280,
+        "width": 39,
+        "height": 17
+      }
+    },
+    {
+      "text": "Computer",
+      "conf": 93.0,
+      "bbox": {
+        "left": 441,
+        "top": 1280,
+        "width": 110,
+        "height": 22
+      }
+    },
+    {
+      "text": "i7",
+      "conf": 93.0,
+      "bbox": {
+        "left": 560,
+        "top": 1280,
+        "width": 16,
+        "height": 17
+      }
+    },
+    {
+      "text": "3,00",
+      "conf": 95.0,
+      "bbox": {
+        "left": 676,
+        "top": 1280,
+        "width": 47,
+        "height": 20
+      }
+    },
+    {
+      "text": "@",
+      "conf": 93.0,
+      "bbox": {
+        "left": 241,
+        "top": 1309,
+        "width": 20,
+        "height": 20
+      }
+    },
+    {
+      "text": "3.40",
+      "conf": 96.0,
+      "bbox": {
+        "left": 271,
+        "top": 1309,
+        "width": 46,
+        "height": 16
+      }
+    },
+    {
+      "text": "Ghz",
+      "conf": 95.0,
+      "bbox": {
+        "left": 327,
+        "top": 1308,
+        "width": 41,
+        "height": 17
+      }
+    },
+    {
+      "text": "Quad",
+      "conf": 95.0,
+      "bbox": {
+        "left": 377,
+        "top": 1308,
+        "width": 56,
+        "height": 20
+      }
+    },
+    {
+      "text": "Core",
+      "conf": 93.0,
+      "bbox": {
+        "left": 443,
+        "top": 1309,
+        "width": 50,
+        "height": 16
+      }
+    },
+    {
+      "text": "250GB",
+      "conf": 91.0,
+      "bbox": {
+        "left": 503,
+        "top": 1308,
+        "width": 72,
+        "height": 17
+      }
+    },
+    {
+      "text": "4GB",
+      "conf": 92.0,
+      "bbox": {
+        "left": 241,
+        "top": 1336,
+        "width": 44,
+        "height": 17
+      }
+    },
+    {
+      "text": "Working",
+      "conf": 96.0,
+      "bbox": {
+        "left": 295,
+        "top": 1336,
+        "width": 89,
+        "height": 22
+      }
+    },
+    {
+      "text": "ay",
+      "conf": 29.0,
+      "bbox": {
+        "left": 172,
+        "top": 1396,
+        "width": 17,
+        "height": 16
+      }
+    },
+    {
+      "text": "Vintage",
+      "conf": 93.0,
+      "bbox": {
+        "left": 240,
+        "top": 1395,
+        "width": 85,
+        "height": 22
+      }
+    },
+    {
+      "text": "Microsolutions",
+      "conf": 90.0,
+      "bbox": {
+        "left": 335,
+        "top": 1395,
+        "width": 157,
+        "height": 17
+      }
+    },
+    {
+      "text": "Pentium",
+      "conf": 96.0,
+      "bbox": {
+        "left": 502,
+        "top": 1395,
+        "width": 88,
+        "height": 17
+      }
+    },
+    {
+      "text": "2,00",
+      "conf": 96.0,
+      "bbox": {
+        "left": 676,
+        "top": 1395,
+        "width": 47,
+        "height": 20
+      }
+    },
+    {
+      "text": "133mhz",
+      "conf": 91.0,
+      "bbox": {
+        "left": 242,
+        "top": 1423,
+        "width": 87,
+        "height": 17
+      }
+    },
+    {
+      "text": "Desktop",
+      "conf": 96.0,
+      "bbox": {
+        "left": 339,
+        "top": 1423,
+        "width": 88,
+        "height": 22
+      }
+    },
+    {
+      "text": "Tower",
+      "conf": 96.0,
+      "bbox": {
+        "left": 435,
+        "top": 1424,
+        "width": 69,
+        "height": 16
+      }
+    },
+    {
+      "text": "PC",
+      "conf": 95.0,
+      "bbox": {
+        "left": 513,
+        "top": 1423,
+        "width": 26,
+        "height": 17
+      }
+    },
+    {
+      "text": "Windows",
+      "conf": 95.0,
+      "bbox": {
+        "left": 241,
+        "top": 1450,
+        "width": 98,
+        "height": 18
+      }
+    },
+    {
+      "text": "95",
+      "conf": 95.0,
+      "bbox": {
+        "left": 348,
+        "top": 1450,
+        "width": 25,
+        "height": 17
+      }
+    },
+    {
+      "text": "5.25",
+      "conf": 96.0,
+      "bbox": {
+        "left": 384,
+        "top": 1450,
+        "width": 46,
+        "height": 17
+      }
+    },
+    {
+      "text": "Floppy",
+      "conf": 96.0,
+      "bbox": {
+        "left": 441,
+        "top": 1450,
+        "width": 71,
+        "height": 22
+      }
+    },
+    {
+      "text": "SUMMARY",
+      "conf": 96.0,
+      "bbox": {
+        "left": 135,
+        "top": 1543,
+        "width": 191,
+        "height": 25
+      }
+    },
+    {
+      "text": "VAT",
+      "conf": 91.0,
+      "bbox": {
+        "left": 643,
+        "top": 1629,
+        "width": 49,
+        "height": 16
+      }
+    },
+    {
+      "text": "[%]",
+      "conf": 92.0,
+      "bbox": {
+        "left": 702,
+        "top": 1628,
+        "width": 39,
+        "height": 20
+      }
+    },
+    {
+      "text": "10%",
+      "conf": 95.0,
+      "bbox": {
+        "left": 670,
+        "top": 1687,
+        "width": 46,
+        "height": 17
+      }
+    },
+    {
+      "text": "Total",
+      "conf": 96.0,
+      "bbox": {
+        "left": 503,
+        "top": 1746,
+        "width": 62,
+        "height": 17
+      }
+    },
+    {
+      "text": "03/03/2012",
+      "conf": 96.0,
+      "bbox": {
+        "left": 805,
+        "top": 145,
+        "width": 170,
+        "height": 26
+      }
+    },
+    {
+      "text": "UM",
+      "conf": 92.0,
+      "bbox": {
+        "left": 781,
+        "top": 850,
+        "width": 36,
+        "height": 16
+      }
+    },
+    {
+      "text": "each",
+      "conf": 96.0,
+      "bbox": {
+        "left": 773,
+        "top": 936,
+        "width": 51,
+        "height": 17
+      }
+    },
+    {
+      "text": "each",
+      "conf": 96.0,
+      "bbox": {
+        "left": 773,
+        "top": 1050,
+        "width": 51,
+        "height": 17
+      }
+    },
+    {
+      "text": "each",
+      "conf": 96.0,
+      "bbox": {
+        "left": 773,
+        "top": 1165,
+        "width": 51,
+        "height": 17
+      }
+    },
+    {
+      "text": "each",
+      "conf": 96.0,
+      "bbox": {
+        "left": 773,
+        "top": 1280,
+        "width": 51,
+        "height": 17
+      }
+    },
+    {
+      "text": "each",
+      "conf": 96.0,
+      "bbox": {
+        "left": 773,
+        "top": 1395,
+        "width": 51,
+        "height": 17
+      }
+    },
+    {
+      "text": "Client:",
+      "conf": 96.0,
+      "bbox": {
+        "left": 828,
+        "top": 447,
+        "width": 118,
+        "height": 25
+      }
+    },
+    {
+      "text": "Duncan",
+      "conf": 96.0,
+      "bbox": {
+        "left": 837,
+        "top": 511,
+        "width": 102,
+        "height": 20
+      }
+    },
+    {
+      "text": "PLC",
+      "conf": 96.0,
+      "bbox": {
+        "left": 952,
+        "top": 510,
+        "width": 48,
+        "height": 21
+      }
+    },
+    {
+      "text": "Unit",
+      "conf": 95.0,
+      "bbox": {
+        "left": 837,
+        "top": 546,
+        "width": 54,
+        "height": 21
+      }
+    },
+    {
+      "text": "8799",
+      "conf": 95.0,
+      "bbox": {
+        "left": 902,
+        "top": 546,
+        "width": 67,
+        "height": 21
+      }
+    },
+    {
+      "text": "Box",
+      "conf": 95.0,
+      "bbox": {
+        "left": 982,
+        "top": 547,
+        "width": 49,
+        "height": 20
+      }
+    },
+    {
+      "text": "0703",
+      "conf": 96.0,
+      "bbox": {
+        "left": 1043,
+        "top": 546,
+        "width": 66,
+        "height": 21
+      }
+    },
+    {
+      "text": "DPO",
+      "conf": 93.0,
+      "bbox": {
+        "left": 837,
+        "top": 582,
+        "width": 56,
+        "height": 21
+      }
+    },
+    {
+      "text": "AP",
+      "conf": 93.0,
+      "bbox": {
+        "left": 904,
+        "top": 583,
+        "width": 34,
+        "height": 20
+      }
+    },
+    {
+      "text": "81970",
+      "conf": 96.0,
+      "bbox": {
+        "left": 950,
+        "top": 582,
+        "width": 85,
+        "height": 21
+      }
+    },
+    {
+      "text": "Tax",
+      "conf": 96.0,
+      "bbox": {
+        "left": 834,
+        "top": 654,
+        "width": 50,
+        "height": 20
+      }
+    },
+    {
+      "text": "Id:",
+      "conf": 93.0,
+      "bbox": {
+        "left": 896,
+        "top": 653,
+        "width": 30,
+        "height": 21
+      }
+    },
+    {
+      "text": "911-82-7132",
+      "conf": 92.0,
+      "bbox": {
+        "left": 939,
+        "top": 653,
+        "width": 175,
+        "height": 21
+      }
+    },
+    {
+      "text": "Net",
+      "conf": 96.0,
+      "bbox": {
+        "left": 903,
+        "top": 850,
+        "width": 42,
+        "height": 16
+      }
+    },
+    {
+      "text": "price",
+      "conf": 96.0,
+      "bbox": {
+        "left": 955,
+        "top": 849,
+        "width": 60,
+        "height": 22
+      }
+    },
+    {
+      "text": "Net",
+      "conf": 95.0,
+      "bbox": {
+        "left": 1062,
+        "top": 850,
+        "width": 41,
+        "height": 16
+      }
+    },
+    {
+      "text": "worth",
+      "conf": 95.0,
+      "bbox": {
+        "left": 1113,
+        "top": 849,
+        "width": 70,
+        "height": 17
+      }
+    },
+    {
+      "text": "VAT",
+      "conf": 90.0,
+      "bbox": {
+        "left": 1231,
+        "top": 850,
+        "width": 49,
+        "height": 16
+      }
+    },
+    {
+      "text": "[%]",
+      "conf": 90.0,
+      "bbox": {
+        "left": 1290,
+        "top": 849,
+        "width": 39,
+        "height": 20
+      }
+    },
+    {
+      "text": "139,95",
+      "conf": 96.0,
+      "bbox": {
+        "left": 940,
+        "top": 931,
+        "width": 74,
+        "height": 32
+      }
+    },
+    {
+      "text": "559,80",
+      "conf": 96.0,
+      "bbox": {
+        "left": 1109,
+        "top": 936,
+        "width": 75,
+        "height": 20
+      }
+    },
+    {
+      "text": "10%",
+      "conf": 96.0,
+      "bbox": {
+        "left": 1284,
+        "top": 936,
+        "width": 46,
+        "height": 18
+      }
+    },
+    {
+      "text": "1",
+      "conf": 92.0,
+      "bbox": {
+        "left": 919,
+        "top": 1051,
+        "width": 10,
+        "height": 16
+      }
+    },
+    {
+      "text": "400,00",
+      "conf": 92.0,
+      "bbox": {
+        "left": 939,
+        "top": 1050,
+        "width": 75,
+        "height": 20
+      }
+    },
+    {
+      "text": "4",
+      "conf": 93.0,
+      "bbox": {
+        "left": 1087,
+        "top": 1051,
+        "width": 12,
+        "height": 16
+      }
+    },
+    {
+      "text": "200,00",
+      "conf": 93.0,
+      "bbox": {
+        "left": 1109,
+        "top": 1050,
+        "width": 74,
+        "height": 20
+      }
+    },
+    {
+      "text": "10%",
+      "conf": 96.0,
+      "bbox": {
+        "left": 1284,
+        "top": 1050,
+        "width": 45,
+        "height": 17
+      }
+    },
+    {
+      "text": "217,00",
+      "conf": 96.0,
+      "bbox": {
+        "left": 939,
+        "top": 1160,
+        "width": 75,
+        "height": 32
+      }
+    },
+    {
+      "text": "217,00",
+      "conf": 96.0,
+      "bbox": {
+        "left": 1109,
+        "top": 1160,
+        "width": 74,
+        "height": 32
+      }
+    },
+    {
+      "text": "10%",
+      "conf": 96.0,
+      "bbox": {
+        "left": 1284,
+        "top": 1165,
+        "width": 45,
+        "height": 17
+      }
+    },
+    {
+      "text": "159,99",
+      "conf": 96.0,
+      "bbox": {
+        "left": 940,
+        "top": 1275,
+        "width": 74,
+        "height": 32
+      }
+    },
+    {
+      "text": "479,97",
+      "conf": 96.0,
+      "bbox": {
+        "left": 1108,
+        "top": 1280,
+        "width": 75,
+        "height": 19
+      }
+    },
+    {
+      "text": "10%",
+      "conf": 96.0,
+      "bbox": {
+        "left": 1284,
+        "top": 1280,
+        "width": 45,
+        "height": 17
+      }
+    },
+    {
+      "text": "390,00",
+      "conf": 96.0,
+      "bbox": {
+        "left": 939,
+        "top": 1390,
+        "width": 75,
+        "height": 32
+      }
+    },
+    {
+      "text": "780,00",
+      "conf": 96.0,
+      "bbox": {
+        "left": 1109,
+        "top": 1390,
+        "width": 75,
+        "height": 32
+      }
+    },
+    {
+      "text": "10%",
+      "conf": 96.0,
+      "bbox": {
+        "left": 1284,
+        "top": 1395,
+        "width": 45,
+        "height": 17
+      }
+    },
+    {
+      "text": "Net",
+      "conf": 96.0,
+      "bbox": {
+        "left": 932,
+        "top": 1629,
+        "width": 42,
+        "height": 16
+      }
+    },
+    {
+      "text": "worth",
+      "conf": 96.0,
+      "bbox": {
+        "left": 983,
+        "top": 1628,
+        "width": 70,
+        "height": 17
+      }
+    },
+    {
+      "text": "VAT",
+      "conf": 96.0,
+      "bbox": {
+        "left": 1191,
+        "top": 1629,
+        "width": 49,
+        "height": 16
+      }
+    },
+    {
+      "text": "6",
+      "conf": 94.0,
+      "bbox": {
+        "left": 957,
+        "top": 1687,
+        "width": 12,
+        "height": 17
+      }
+    },
+    {
+      "text": "236,77",
+      "conf": 94.0,
+      "bbox": {
+        "left": 979,
+        "top": 1687,
+        "width": 74,
+        "height": 20
+      }
+    },
+    {
+      "text": "623,68",
+      "conf": 96.0,
+      "bbox": {
+        "left": 1164,
+        "top": 1687,
+        "width": 75,
+        "height": 20
+      }
+    },
+    {
+      "text": "$",
+      "conf": 92.0,
+      "bbox": {
+        "left": 924,
+        "top": 1746,
+        "width": 13,
+        "height": 20
+      }
+    },
+    {
+      "text": "6",
+      "conf": 95.0,
+      "bbox": {
+        "left": 947,
+        "top": 1746,
+        "width": 13,
+        "height": 17
+      }
+    },
+    {
+      "text": "236,77",
+      "conf": 95.0,
+      "bbox": {
+        "left": 971,
+        "top": 1746,
+        "width": 82,
+        "height": 20
+      }
+    },
+    {
+      "text": "$",
+      "conf": 93.0,
+      "bbox": {
+        "left": 1133,
+        "top": 1746,
+        "width": 12,
+        "height": 20
+      }
+    },
+    {
+      "text": "623,68",
+      "conf": 96.0,
+      "bbox": {
+        "left": 1156,
+        "top": 1746,
+        "width": 83,
+        "height": 20
+      }
+    },
+    {
+      "text": "Gross",
+      "conf": 96.0,
+      "bbox": {
+        "left": 1430,
+        "top": 849,
+        "width": 69,
+        "height": 17
+      }
+    },
+    {
+      "text": "worth",
+      "conf": 96.0,
+      "bbox": {
+        "left": 1428,
+        "top": 876,
+        "width": 70,
+        "height": 17
+      }
+    },
+    {
+      "text": "615,78",
+      "conf": 95.0,
+      "bbox": {
+        "left": 1423,
+        "top": 936,
+        "width": 76,
+        "height": 20
+      }
+    },
+    {
+      "text": "4",
+      "conf": 92.0,
+      "bbox": {
+        "left": 1402,
+        "top": 1051,
+        "width": 12,
+        "height": 16
+      }
+    },
+    {
+      "text": "620,00",
+      "conf": 92.0,
+      "bbox": {
+        "left": 1424,
+        "top": 1050,
+        "width": 74,
+        "height": 19
+      }
+    },
+    {
+      "text": "238,70",
+      "conf": 96.0,
+      "bbox": {
+        "left": 1424,
+        "top": 1165,
+        "width": 75,
+        "height": 20
+      }
+    },
+    {
+      "text": "527,97",
+      "conf": 96.0,
+      "bbox": {
+        "left": 1424,
+        "top": 1280,
+        "width": 74,
+        "height": 19
+      }
+    },
+    {
+      "text": "858,00",
+      "conf": 96.0,
+      "bbox": {
+        "left": 1423,
+        "top": 1395,
+        "width": 76,
+        "height": 20
+      }
+    },
+    {
+      "text": "Gross",
+      "conf": 96.0,
+      "bbox": {
+        "left": 1353,
+        "top": 1628,
+        "width": 69,
+        "height": 17
+      }
+    },
+    {
+      "text": "worth",
+      "conf": 96.0,
+      "bbox": {
+        "left": 1432,
+        "top": 1628,
+        "width": 70,
+        "height": 17
+      }
+    },
+    {
+      "text": "6",
+      "conf": 96.0,
+      "bbox": {
+        "left": 1406,
+        "top": 1687,
+        "width": 12,
+        "height": 17
+      }
+    },
+    {
+      "text": "860,45",
+      "conf": 96.0,
+      "bbox": {
+        "left": 1427,
+        "top": 1687,
+        "width": 75,
+        "height": 20
+      }
+    },
+    {
+      "text": "$",
+      "conf": 93.0,
+      "bbox": {
+        "left": 1373,
+        "top": 1746,
+        "width": 13,
+        "height": 20
+      }
+    },
+    {
+      "text": "6",
+      "conf": 96.0,
+      "bbox": {
+        "left": 1396,
+        "top": 1747,
+        "width": 13,
+        "height": 16
+      }
+    },
+    {
+      "text": "860,45",
+      "conf": 96.0,
+      "bbox": {
+        "left": 1419,
+        "top": 1746,
+        "width": 83,
+        "height": 20
+      }
+    }
+  ],
+  "word_count": 176,
+  "timestamp": "2026-01-27T05:49:19.573634"
+}

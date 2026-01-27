@@ -1,0 +1,21 @@
+# OCR Experiments Requirements
+
+# Approach 1: OCR-only (Tesseract)
+pytesseract>=0.3.10
+Pillow>=10.0.0
+
+# Approach 2: OCR + Layout (PaddleOCR)
+paddlepaddle>=2.5.0
+paddleocr>=2.7.0
+
+# Approach 3: OCR-free VLM (Donut)
+transformers>=4.35.0
+torch>=2.0.0
+sentencepiece>=0.1.99
+
+# Approach 4: OCR + LLM Grounding
+openai>=1.0.0
+# anthropic>=0.18.0  # uncomment if using Claude
+
+# Utilities
+tqdm>=4.65.0
