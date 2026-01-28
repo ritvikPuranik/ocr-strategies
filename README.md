@@ -12,15 +12,6 @@ A typical OCR pipeline, and the steps associated with it
 | Semantics        | Layout         | Fields         | Wrong totals           |
 
 
-### Expt 1 - Direct OCR through CLI - No preprocessing/ Layout detection
-Image - Clean invoice image, with table and columns
-Model - tesseract4re:latest (running as a docker container)
-Observations -
-- Text was detected correctly
-- Layout was messed up - lost the meaning
-    - OCR processed it as left and right halves of the document - table in between was broken up at a column
-- Need Layout Context before feeding to OCR engine / Vision based transformers to store context of the layout
-
 ## Text Extraction vs Document Understanding
 
 Text Extraction: Converts pixels to characters. Input: image; Output: text tokens with confidences and often boxes. Tools: Tesseract, PaddleOCR. Failures: character confusions, missed small text, wrong reading order.
@@ -113,3 +104,13 @@ experiments/outputs/
 | 2. OCR + Layout | TBD | TBD | TBD | Medium | |
 | 3. OCR-free VLM | TBD | TBD | TBD | Slow | GPU recommended |
 | 4. OCR + LLM | TBD | TBD | TBD | Slow | API costs |
+
+- OCR only (Tesseract v4)
+    - detected text correctly, 
+    - completely missed the layout. Table destroyed, even the seller and client info on top skewed
+    - Super fast
+
+- Layout aware model (PaddleOCR + PPStructure v3)
+    - Detected text and layout correctly. Preserved the table and could Separate Seller and client information too
+    - Very Slow - took 1 document >10 min to process. Models >3-4GB 
+    - More production friendly, but needs significant optimization - GPU acceleration, single process of cached models, multiple workers, image compression, smaller models if feasiable, ONNX/TensorRT
