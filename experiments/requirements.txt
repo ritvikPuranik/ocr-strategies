@@ -4,9 +4,9 @@
 pytesseract>=0.3.10
 Pillow>=10.0.0
 
-# Approach 2: OCR + Layout (PaddleOCR)
+# Approach 2: OCR + Layout (PaddleOCR 3.x with structure detection)
 paddlepaddle>=2.5.0
-paddleocr>=2.7.0
+paddleocr[doc-parser]>=3.0.0
 
 # Approach 3: OCR-free VLM (Donut)
 transformers>=4.35.0

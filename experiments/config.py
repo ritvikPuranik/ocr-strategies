@@ -11,10 +11,10 @@ OUTPUT_DIR = PROJECT_ROOT / "experiments" / "outputs"
 # Images for experiment (first 5)
 EXPERIMENT_IMAGES = [
     "batch1-0001.jpg",
-    "batch1-0002.jpg",
-    "batch1-0003.jpg",
-    "batch1-0004.jpg",
-    "batch1-0005.jpg",
+    # "batch1-0002.jpg",
+    # "batch1-0003.jpg",
+    # "batch1-0004.jpg",
+    # "batch1-0005.jpg",
 ]
 
 # Ensure output directory exists
