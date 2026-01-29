@@ -8,10 +8,9 @@ Pillow>=10.0.0
 paddlepaddle>=2.5.0
 paddleocr[doc-parser]>=3.0.0
 
-# Approach 3: OCR-free VLM (Donut)
-transformers>=4.35.0
-torch>=2.0.0
-sentencepiece>=0.1.99
+# Approach 3: OCR-free VLM (Ollama vision models)
+ollama>=0.1.0
+Pillow>=10.0.0
 
 # Approach 4: OCR + LLM Grounding
 openai>=1.0.0

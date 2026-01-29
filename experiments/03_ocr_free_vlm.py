@@ -1,133 +1,195 @@
 #!/usr/bin/env python3
 """
-Approach 3: OCR-free Vision Model (Donut)
+Approach 3: OCR-free Vision Model (Ollama VLM)
 
-Uses Donut (Document Understanding Transformer) - an end-to-end vision model
-that extracts structured data directly from images without separate OCR.
+Uses Ollama-served vision-language models that extract structured data 
+directly from images without separate OCR.
 
-Model: naver-clova-ix/donut-base-finetuned-cord-v2 (trained on receipts/invoices)
+Supported models (vision-capable):
+  - llama3.2-vision:11b (recommended)
+  - minicpm-v:8b (excellent for documents, lighter)
+  - llava:7b / llava:13b
 
 Usage:
-    python 03_ocr_free_vlm.py
+    # First, pull a vision model in Ollama:
+    ollama pull minicpm-v:8b
+    
+    # Then run:
+    python 03_ocr_free_vlm.py --model minicpm-v:8b
+    python 03_ocr_free_vlm.py --model llama3.2-vision:11b
 
 Requirements:
-    pip install transformers torch sentencepiece
+    pip install ollama pillow
+    brew install ollama  # if not installed
 """
+import argparse
 import json
-import re
+import base64
 from pathlib import Path
 from datetime import datetime
+from io import BytesIO
 
 try:
-    import torch
-    from transformers import DonutProcessor, VisionEncoderDecoderModel
+    import ollama
     from PIL import Image
-    TRANSFORMERS_AVAILABLE = True
+    OLLAMA_AVAILABLE = True
 except ImportError:
-    TRANSFORMERS_AVAILABLE = False
-    print("Warning: transformers/torch not installed. Run: pip install transformers torch sentencepiece")
+    OLLAMA_AVAILABLE = False
+    print("Warning: ollama not installed. Run: pip install ollama")
 
 from config import get_image_paths, OUTPUT_DIR
 
 
-# Model options - choose based on your use case
-MODELS = {
-    "cord": "naver-clova-ix/donut-base-finetuned-cord-v2",  # Receipts/invoices
-    "docvqa": "naver-clova-ix/donut-base-finetuned-docvqa",  # Document QA
-    "rvlcdip": "naver-clova-ix/donut-base-finetuned-rvlcdip",  # Document classification
-}
+# Invoice extraction prompt for VLM
+EXTRACTION_PROMPT = """Analyze this document image and extract structured information in JSON format.
 
-# Using CORD model for invoice/receipt extraction
-MODEL_NAME = MODELS["cord"]
-
-
-def load_model():
-    """Load Donut model and processor"""
-    print(f"Loading model: {MODEL_NAME}")
-    print("(This may take a few minutes on first run...)")
-    
-    processor = DonutProcessor.from_pretrained(MODEL_NAME)
-    model = VisionEncoderDecoderModel.from_pretrained(MODEL_NAME)
-    
-    # Use GPU if available
-    device = "cuda" if torch.cuda.is_available() else "mps" if torch.backends.mps.is_available() else "cpu"
-    model.to(device)
-    model.eval()
-    
-    print(f"Model loaded on: {device}")
-    return processor, model, device
-
-
-def run_donut(image_path: Path, processor, model, device) -> dict:
-    """Run Donut model on an image"""
-    # Load and preprocess image
-    image = Image.open(image_path).convert("RGB")
-    
-    # Prepare input
-    pixel_values = processor(image, return_tensors="pt").pixel_values
-    pixel_values = pixel_values.to(device)
-    
-    # Generate output
-    task_prompt = "<s_cord-v2>"  # CORD task prompt
-    decoder_input_ids = processor.tokenizer(
-        task_prompt, 
-        add_special_tokens=False, 
-        return_tensors="pt"
-    ).input_ids.to(device)
-    
-    with torch.no_grad():
-        outputs = model.generate(
-            pixel_values,
-            decoder_input_ids=decoder_input_ids,
-            max_length=model.decoder.config.max_position_embeddings,
-            early_stopping=True,
-            pad_token_id=processor.tokenizer.pad_token_id,
-            eos_token_id=processor.tokenizer.eos_token_id,
-            use_cache=True,
-            num_beams=1,  # Greedy decoding for speed
-            bad_words_ids=[[processor.tokenizer.unk_token_id]],
-            return_dict_in_generate=True,
-        )
-    
-    # Decode output
-    sequence = processor.batch_decode(outputs.sequences)[0]
-    sequence = sequence.replace(processor.tokenizer.eos_token, "").replace(processor.tokenizer.pad_token, "")
-    sequence = re.sub(r"<.*?>", "", sequence, count=1).strip()  # Remove task prompt
-    
-    # Parse JSON from output
-    try:
-        # Donut outputs JSON-like structure
-        parsed = processor.token2json(sequence)
-    except Exception:
-        parsed = {"raw_output": sequence}
-    
-    return {
-        "raw_sequence": sequence,
-        "parsed": parsed
+Extract the following fields (use null if not found):
+{
+  "seller": {
+    "name": "string",
+    "address": "string",
+    "tax id": "string"
+  },
+  "invoice_number": "string",
+  "invoice_date": "string (YYYY-MM-DD)",
+  "due_date": "string (YYYY-MM-DD)",
+  "client": {
+    "name": "string",
+    "address": "string",
+    "tax id": "string"
+  },
+  "line_items": [
+    {
+      "description": "string",
+      "quantity": "number",
+      "unit_price": "number",
+      "total": "number"
     }
+  ],
+  "subtotal": "number",
+  "tax": "number",
+  "total": "number"
+}
+Explain what you see in simple words before providing the JSON output."""
+# Respond ONLY with valid JSON, no markdown formatting or explanation."""
+
+
+def image_to_base64(image_path: Path) -> str:
+    """Convert image to base64 for Ollama API"""
+    with open(image_path, 'rb') as f:
+        return base64.b64encode(f.read()).decode('utf-8')
+
+
+def run_ollama_vlm(image_path: Path, model: str) -> dict:
+    """Run Ollama vision model on an image"""
+    try:
+        # Prepare image
+        img_b64 = image_to_base64(image_path)
+        
+        # Call Ollama with vision
+        response = ollama.chat(
+            model=model,
+            messages=[{
+                'role': 'user',
+                'content': EXTRACTION_PROMPT,
+                'images': [img_b64]
+            }]
+        )
+        
+        content = response['message']['content']
+        print(f"vlm response -> {content}")
+        
+        # Parse JSON from response
+        try:
+            # Handle potential markdown code blocks
+            if "```json" in content:
+                content = content.split("```json")[1].split("```")[0]
+            elif "```" in content:
+                content = content.split("```")[1].split("```")[0]
+            
+            parsed = json.loads(content.strip())
+            return {
+                "parsed": parsed,
+                "raw_response": content,
+                "success": True
+            }
+        except json.JSONDecodeError as e:
+            return {
+                "raw_response": content,
+                "parse_error": str(e),
+                "success": False
+            }
+            
+    except Exception as e:
+        return {
+            "error": str(e),
+            "success": False
+        }
+
+
+def parse_args():
+    parser = argparse.ArgumentParser(description="OCR-free VLM via Ollama")
+    parser.add_argument("--model", default="gemma3:4b",
+                        help="Ollama vision model to use (must be vision-capable)")
+    return parser.parse_args()
 
 
 def main():
+    args = parse_args()
+    
     print("=" * 60)
-    print("Approach 3: OCR-free Vision Model (Donut)")
-    print(f"Model: {MODEL_NAME}")
+    print(f"Approach 3: OCR-free Vision Model (Ollama)")
+    print(f"Model: {args.model}")
     print("=" * 60)
     
-    if not TRANSFORMERS_AVAILABLE:
+    if not OLLAMA_AVAILABLE:
         print("\n✗ Required packages not installed!")
-        print("  Install with: pip install transformers torch sentencepiece")
+        print("  Install with: pip install ollama pillow")
         return
+    
+    # Check if Ollama is running and model is available
+    try:
+        print("\nChecking Ollama connection...")
+        models_response = ollama.list()
+        
+        # Debug: print response structure
+        # print(f"DEBUG: Response type: {type(models_response)}")
+        # print(f"DEBUG: Response: {models_response}")
+        
+        # Handle different response structures
+        available_models = []
+        if isinstance(models_response, dict):
+            if 'models' in models_response:
+                available_models = [m.get('name', m.get('model', '')) for m in models_response['models']]
+        elif isinstance(models_response, list):
+            available_models = [m.get('name', m.get('model', '')) for m in models_response]
+        
+        if available_models:
+            print(f"✓ Found {len(available_models)} models in Ollama")
+            if args.model not in available_models:
+                print(f"\n⚠ Model '{args.model}' not found in Ollama!")
+                print(f"  Available models: {', '.join(available_models[:5])}")
+                print(f"\n  Pull it with: ollama pull {args.model}")
+                print("\n  Recommended vision models:")
+                print("    - gemma3:4b (multimodal, good for M1)")
+                print("    - minicpm-v:8b (excellent for documents, lighter)")
+                print("    - llama3.2-vision:11b (more capable, heavier)")
+                return
+            else:
+                print(f"✓ Model '{args.model}' found")
+        else:
+            print("⚠ Could not parse Ollama model list, but continuing...")
+            print(f"  Attempting to use '{args.model}' anyway...")
+            print("  If it fails, run: ollama pull {args.model}")
+            
+    except Exception as e:
+        print(f"⚠ Warning: Could not connect to Ollama: {e}")
+        print(f"  Make sure Ollama is running: ollama serve")
+        print(f"  Continuing anyway - inference will fail if model '{args.model}' isn't available")
+        print("")
     
     output_dir = OUTPUT_DIR / "03_ocr_free_vlm"
     output_dir.mkdir(parents=True, exist_ok=True)
-    
-    # Load model
-    try:
-        processor, model, device = load_model()
-    except Exception as e:
-        print(f"\n✗ Failed to load model: {e}")
-        print("  Make sure you have enough memory and internet connection.")
-        return
     
     results = []
     
@@ -135,17 +197,25 @@ def main():
         print(f"\nProcessing: {image_path.name}")
         
         try:
-            # Run Donut
-            donut_result = run_donut(image_path, processor, model, device)
+            # Run VLM
+            print(f"  Calling {args.model}...")
+            vlm_result = run_ollama_vlm(image_path, args.model)
             
             result = {
                 "image": image_path.name,
                 "approach": "ocr_free_vlm",
-                "model": MODEL_NAME,
-                "output": donut_result["parsed"],
-                "raw_sequence": donut_result["raw_sequence"],
+                "model": args.model,
+                "output": vlm_result.get("parsed", {}),
+                "raw_response": vlm_result.get("raw_response", ""),
+                "success": vlm_result.get("success", False),
                 "timestamp": datetime.now().isoformat()
             }
+            
+            if vlm_result.get("error"):
+                result["error"] = vlm_result["error"]
+            if vlm_result.get("parse_error"):
+                result["parse_error"] = vlm_result["parse_error"]
+            
             results.append(result)
             
             # Save individual result
@@ -153,7 +223,12 @@ def main():
             with open(out_file, 'w') as f:
                 json.dump(result, f, indent=2, ensure_ascii=False)
             
-            print(f"  ✓ Extracted fields: {list(donut_result['parsed'].keys()) if isinstance(donut_result['parsed'], dict) else 'raw'}")
+            if vlm_result.get("success"):
+                fields = list(vlm_result["parsed"].keys()) if isinstance(vlm_result["parsed"], dict) else []
+                print(f"  ✓ Extracted fields: {', '.join(fields) if fields else 'see raw response'}")
+            else:
+                print(f"  ⚠ Parse failed: {vlm_result.get('error') or vlm_result.get('parse_error', 'Unknown')}")
+            
             print(f"  → Saved to: {out_file.name}")
             
         except Exception as e:
@@ -170,7 +245,7 @@ def main():
     with open(summary_file, 'w') as f:
         json.dump({
             "approach": "03_ocr_free_vlm",
-            "model": MODEL_NAME,
+            "model": args.model,
             "total_images": len(results),
             "results": results
         }, f, indent=2, ensure_ascii=False)
